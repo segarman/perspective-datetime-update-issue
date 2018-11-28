@@ -1,0 +1,22 @@
+{
+    "name": "perspective-datetime-update-issue",
+    "private": true,
+    "version": "0.2.9",
+    "description": "An example of an issue using datetime on a schema and table update",
+    "scripts": {
+        "start": "npm run webpack && npm run copy-perspective && npm run server",
+        "server": "http-server build -p 8000",
+        "copy-perspective": "cp -r node_modules/@jpmorganchase/perspective/build/* ./build",
+        "webpack": "webpack --config webpack.config.js --color"
+    },
+    "keywords": [],
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@jpmorganchase/perspective": "^0.2.9",
+        "http-server": "^0.11.1",
+        "webpack": "^4.22.0"
+    },
+    "devDependencies": {
+        "webpack-cli": "^3.1.2"
+    }
+}
