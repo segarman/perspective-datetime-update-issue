@@ -12,7 +12,8 @@
     "keywords": [],
     "license": "Apache-2.0",
     "dependencies": {
-        "@jpmorganchase/perspective": "^0.2.9",
+        "babel-core": "^6.26.0",
+        "@jpmorganchase/perspective": "0.2.1",
         "http-server": "^0.11.1",
         "webpack": "^4.22.0"
     },

@@ -6,8 +6,8 @@
  * the Apache License 2.0.  The full license can be found in the LICENSE file.
  *
  */
-const perspective = require("@jpmorganchase/perspective/build/perspective.js");
+const perspective = require("@jpmorganchase/perspective").default;
 
-const table = perspective.worker().table({x: 'datetime'});
+const table = perspective.worker().table({x: 'date'});
 table.update([{x: 1543440937729}]);
 table.view().to_json().then(console.log);
